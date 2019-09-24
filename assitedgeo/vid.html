@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AssistedGeometry</title>
+
+    <link href="style.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <video poster="" id="bgvid" playsinline autoplay muted loop>
+      <!--
+    - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+    WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+    <source src="demo.webm" type="video/webm">
+    <source src="demo.mp4" type="video/mp4">
+
+    </video>
+    <div id="polina">
+    <h3>AssitedGeometry</h3>
+    <p>Un projet de Xavier Nicolle et Antoine Coqueron
+
+    <p>Premier projet logiciel avec interface graphique en DUT informatique. Choix personnel d'utiliser javafx. En rétrospective, J’aurai préféré utiliser le même langage que tous mes camarades car j’ai passé largement plus de temps à apprendre la plateforme (avec Scene Builder notamment) qu' à optimiser mon code. De ce fait je me suis retrouvé à rendre du code pas très agile mais, avec un peu plus de temps, facilement optimisable.</p>
+    <p>Remerciments à Dudley Storey pour son <a href="#">CodePen</a></p>
+    <button>Pause</button>
+    </div>
+
+    <script>
+      var vid = document.getElementById("bgvid");
+    var pauseButton = document.querySelector("#polina button");
+
+    if (window.matchMedia('(prefers-reduced-motion)').matches) {
+        vid.removeAttribute("autoplay");
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+    }
+
+    function vidFade() {
+      vid.classList.add("stopfade");
+    }
+
+    vid.addEventListener('ended', function()
+    {
+    // only functional if "loop" is removed
+    vid.pause();
+    // to capture IE10
+    vidFade();
+    });
+
+
+    pauseButton.addEventListener("click", function() {
+      vid.classList.toggle("stopfade");
+      if (vid.paused) {
+        vid.play();
+        pauseButton.innerHTML = "Pause";
+      } else {
+        vid.pause();
+        pauseButton.innerHTML = "Paused";
+      }
+    })
+    </script>
+
+  </body>
+</html>
