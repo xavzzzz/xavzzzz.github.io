@@ -1,0 +1,71 @@
+
+body {
+    background: url("images/realback.png");
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.nav-link {
+
+    margin-left: 50px;
+
+    }
+.nav-social {
+    margin-right: 20px;
+}
+.navbar {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+footer div{
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  position: static;
+  width: 100%;
+  margin-bottom: 1.5vh;
+  margin-right: 4vw;
+  background-color: white;
+  z-index: 200;
+  padding-top: 2vh;
+}
+.container2 {
+  margin-top: 60vh;
+  height: 75vh;
+}
+.info {
+  margin-top: 5vh;
+  font-size: 20px;
+}
+.inf {
+  text-align: center;
+}
+.infti {
+  margin-top: 10vh;
+}
+.des {
+  font-size: 20px;
+  margin-top: 40vh;
+  margin-left: 60vw;
+}
+.dwn{
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  width: 15vw;
+  margin-bottom: 1.5vh;
+  margin-right: 1.5vw;
+  position: fixed;
+  z-index: -10;
+}
+.dwn p {
+  margin: 0;
+  padding-right: 0.7vw;
+}
+footer p {
+  left: 0;
+}
+.info p {
+  background-color: white;
+}

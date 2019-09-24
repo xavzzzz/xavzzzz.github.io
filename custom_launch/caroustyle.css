@@ -1,0 +1,104 @@
+
+body {
+
+}
+
+.navlink{
+  margin-left: 10%;
+}
+.rightp {
+  text-align: right;
+}
+.rightp p{
+  padding-top: 2vh;
+}
+.legal{
+  font-size: 60%;
+}
+.al{
+
+  width: 70vw;
+}
+.dwn p{
+  font-size: 1vw;
+}
+.nav-link {
+
+    margin-left: 50px;
+    }
+.nav-social {
+    margin-right: 20px;
+}
+.allcar{
+  margin-top: 15vh;
+}
+.titlcom{
+  text-align: center;
+  margin-bottom: 9vh;
+}
+#app {
+    background-color: none;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+.carousel .carousel-item img {
+  max-height: 768px;
+  min-width: auto;
+  border-radius: 40px;
+}
+.carousel-item {
+  text-align: center;
+}
+.carousel-titre{
+  text-align: center;
+  margin-top: 7vh;
+}
+footer div{
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  position: static;
+  width: 100%;
+  margin-bottom: 1.5vh;
+  margin-right: 4vw;
+  background-color: white;
+  z-index: 200;
+  margin-top: 10vh;
+
+  padding-top: 6vh;
+}
+.carimg{
+  width: 350px;
+  height: 350px;
+}
+.titlcom{
+  a
+}
+.dwn{
+  bottom: 0;
+  right: 0;
+  text-align: right;
+  width: 15vw;
+  margin-bottom: 1.5vh;
+  margin-right: 1.5vw;
+  position: fixed;
+  z-index: -10;
+}
+.tshirt{
+  margin-right: 0;
+}
+.dwn p {
+  margin: 0;
+  padding-right: 0.7vw;
+}
+.arrow {
+  width: 50%;
+}
+.dwnimg{
+  width: 9vw;
+  height: 7.5vh;
+}
