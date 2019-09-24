@@ -1,0 +1,46 @@
+.carousel-inner{
+	top:180px;
+	margin-left: 2%;
+}
+
+.blog .carousel-indicators {
+	left: -5%;
+	top: auto;
+    bottom: -200px;
+
+}
+
+#btn2{
+margin-left:10%;
+}
+
+/* Bouton rond */
+.blog .carousel-indicators li {
+    background: rgb(255, 153, 51);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.blog .carousel-indicators .active {
+background: rgb(255, 77, 77);
+}
+
+body {
+	background-color:rgb(110, 11, 20)
+}
+
+.hide{
+	visibility: hidden;
+}
+.show{
+	visibility: visible;
+}
+
+.row{
+	padding-bottom : 1%;
+}
+
+.col{
+
+}

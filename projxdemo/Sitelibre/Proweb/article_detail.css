@@ -1,0 +1,128 @@
+
+
+body{
+  background-color:rgb(110, 11, 20)
+}
+
+/*----------------------------------------------menu-----------------------------------------------*/
+
+.menu-items .item{
+  margin-left: 4vw;
+}
+.item a :hover{
+    transform: scale(2,2);
+}
+
+.menu{
+  margin-left: 0;
+  padding-left: 0;
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+}
+
+.main-row{
+
+  margin-top: 4%;
+  margin-bottom: 5%;
+  width: 100vw;
+  height: 10vh;
+}
+.main-logo{
+  margin-left: 4vw;
+}
+.main-top{
+  justify-content: flex-end;
+}
+.main-row #titlexav{
+  font-size: 125%;
+  color:#fff;
+}
+.logo{
+  width: 6vw;
+  height: auto;
+}
+.ul-logo{
+  width: 12%;
+  height: auto;
+  transform: translateY(-40%);
+}
+.menu-items{
+  font-size: 135%;
+  margin-bottom: 0.5%;
+  font-weight: lighter;
+}
+.menu-items a{
+  margin-left: 3.9%;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/*--------------------------carousel--------------------------------*/
+
+#myCarousel{
+  z-index: 3;
+}
+
+.carousel{
+  margin-top:6%;
+  margin-left:10%;
+}
+
+h1{
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 10%;
+}
+#carousel-text{
+  margin-left:9%;
+  min-width: 700px;
+  font-size:20px;
+}
+
+p,h2{
+  color: WHITE;
+  font-weight: lighter;
+
+}
+
+#carousel-bounding-box{
+  max-width: 1100px;
+  margin-top: 12%;
+}
+
+.Carousel-titre{
+  color:white;
+  font-weight: normal;
+  font-size:  30px;
+  visibility: hidden;
+  margin-bottom: 0px;
+}
+
+.item:hover .Carousel-titre{
+  visibility: visible;
+}
+
+.item:hover .carousel-caption{
+  visibility: visible;
+}
+
+.carousel-caption{
+  background-color: rgb(110, 11, 20,0.5);
+  visibility: hidden;
+  }
+
+#carousel-text h2 {
+  font-weight: bold;
+  }
