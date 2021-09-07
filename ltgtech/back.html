@@ -1,0 +1,24 @@
+<script>
+   document.querySelectorAll(".target-tab-link").forEach(function(element){
+      element.addEventListener("click", setStorageId.bind(this));
+      var childs = element.children;
+      for (var i = 0; i < childs.length; i++) {
+      childs[i].style.pointerEvents = "none";
+      }
+   })
+   function setStorageId(event){
+      window.sessionStorage.setItem('tabid', event.target.getAttribute("id"));
+      
+      var url = window.location.toString();
+      url = url.split("#link")[0];
+      window.history.pushState({}, 'projetcs', url);
+    
+   }
+   document.addEventListener('DOMContentLoaded', function() {
+
+      let link = window.location.href;
+      let result = link.split("#link");
+        
+        if(result.length>=2){
+            let tablink = result[1];
+</script>
